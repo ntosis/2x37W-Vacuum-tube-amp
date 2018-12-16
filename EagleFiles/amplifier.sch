@@ -28280,7 +28280,7 @@ Solder type</description>
 <instance part="R2" gate="G$1" x="30.48" y="76.2" rot="R270"/>
 <instance part="R3" gate="G$1" x="45.72" y="81.28"/>
 <instance part="R7" gate="G$1" x="35.56" y="20.32" rot="R270"/>
-<instance part="R8" gate="G$1" x="50.8" y="43.18"/>
+<instance part="R8" gate="G$1" x="48.26" y="27.94"/>
 <instance part="R6" gate="G$1" x="35.56" y="38.1" rot="R270"/>
 <instance part="R16" gate="G$1" x="76.2" y="53.34" rot="R90"/>
 <instance part="R17" gate="G$1" x="71.12" y="60.96"/>
@@ -28312,7 +28312,7 @@ Solder type</description>
 <instance part="C8" gate="G$1" x="134.62" y="33.02" rot="R90"/>
 <instance part="C9" gate="G$1" x="134.62" y="68.58" rot="R90"/>
 <instance part="C6" gate="G$1" x="58.42" y="66.04"/>
-<instance part="C7" gate="G$1" x="48.26" y="30.48" rot="R90"/>
+<instance part="C7" gate="G$1" x="48.26" y="17.78" rot="R90"/>
 <instance part="GND1" gate="1" x="7.62" y="22.86"/>
 <instance part="GND2" gate="1" x="35.56" y="10.16"/>
 <instance part="GND3" gate="1" x="-25.4" y="40.64"/>
@@ -28414,24 +28414,6 @@ Solder type</description>
 <junction x="7.62" y="48.26"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="EF86" gate="G$1" pin="PK"/>
-<wire x1="35.56" y1="43.18" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="43.18" x2="45.72" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="EF86" gate="G$1" pin="PBG"/>
-<wire x1="45.72" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
-<junction x="35.56" y="43.18"/>
-<pinref part="R8" gate="G$1" pin="1"/>
-<junction x="45.72" y="43.18"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="30.48" x2="45.72" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="+"/>
-<wire x1="20.32" y1="40.64" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="EF86" gate="G$1" pin="PSG"/>
@@ -28449,16 +28431,6 @@ Solder type</description>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="66.04" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
 <junction x="58.42" y="60.96"/>
-</segment>
-</net>
-<net name="N$5" class="0">
-<segment>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="35.56" y1="25.4" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="-"/>
-<wire x1="20.32" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
-<junction x="35.56" y="33.02"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -28646,15 +28618,15 @@ Solder type</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="43.18" x2="55.88" y2="30.48" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="55.88" y1="30.48" x2="53.34" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="30.48" x2="55.88" y2="0" width="0.1524" layer="91"/>
-<junction x="55.88" y="30.48"/>
-<wire x1="55.88" y1="0" x2="226.06" y2="0" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="0" x2="226.06" y2="0" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="0" x2="226.06" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="FEEDBACK" gate="1" pin="P"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="0" x2="53.34" y2="17.78" width="0.1524" layer="91"/>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="53.34" y1="17.78" x2="53.34" y2="27.94" width="0.1524" layer="91"/>
+<junction x="53.34" y="17.78"/>
+<junction x="53.34" y="27.94"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -28959,6 +28931,40 @@ Solder type</description>
 <pinref part="U$1" gate="G$1" pin="R2_3"/>
 <wire x1="-40.64" y1="27.94" x2="-40.64" y2="38.1" width="0.1524" layer="91"/>
 <junction x="-40.64" y="38.1"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="EF86" gate="G$1" pin="PK"/>
+<pinref part="R6" gate="G$1" pin="1"/>
+<junction x="35.56" y="43.18"/>
+<wire x1="20.32" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="+"/>
+<wire x1="20.32" y1="40.64" x2="20.32" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="EF86" gate="G$1" pin="PBG"/>
+<wire x1="45.72" y1="58.42" x2="40.64" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="C7" gate="G$1" pin="1"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<wire x1="45.72" y1="17.78" x2="43.18" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="17.78" x2="43.18" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="43.18" y1="27.94" x2="43.18" y2="33.02" width="0.1524" layer="91"/>
+<junction x="43.18" y="27.94"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="1"/>
+<wire x1="35.56" y1="25.4" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="-"/>
+<wire x1="20.32" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
+<junction x="35.56" y="33.02"/>
+<wire x1="43.18" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
+<junction x="45.72" y="17.78"/>
 </segment>
 </net>
 </nets>
